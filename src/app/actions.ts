@@ -1,6 +1,9 @@
 import { TurnContext } from "botbuilder";
 import { ApplicationTurnState, Task } from "./turnState";
 
+// Begin <<Import interfaces>>
+// End <<Import interfaces>>
+
 interface CreateTaskParameters {
   title: string;
   description: string;
@@ -41,4 +44,3 @@ export async function deleteTask(
   delete state.conversation.tasks[parameters.title];
   return "task deleted, think about your next action";
 }
-
