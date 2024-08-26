@@ -8,8 +8,6 @@ import { ApplicationTurnState } from "./turnState";
 import { resetMessage } from "./messages";
 
 // Begin <<Import actions>>
-import { createTask } from "./actions";
-import { deleteTask } from "./actions";
 // End <<Import actions>>
 
 // Create AI components
@@ -42,8 +40,6 @@ const app = new Application<ApplicationTurnState>({
 app.message("/reset", resetMessage);
 
 // <<Actions Begin>>
-app.ai.action("createTask", createTask);
-app.ai.action("deleteTask", deleteTask);
 // <<Actions End>>  
 
 
