@@ -1,0 +1,90 @@
+[
+    {
+        "name": "createCustomer",
+        "description": "Create a new customer entry in the database",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "customerName": {
+                    "type": "string",
+                    "description": "The name of the customer to create"
+                },
+                "contactInfo": {
+                    "type": "string",
+                    "description": "The contact information of the customer"
+                }
+            },
+            "required": [
+                "customerName",
+                "contactInfo"
+            ]
+        }
+    },
+    {
+        "name": "deleteCustomer",
+        "description": "Delete an existing customer from the database",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "customerName": {
+                    "type": "string",
+                    "description": "The name of the customer to delete"
+                }
+            },
+            "required": [
+                "customerName"
+            ]
+        }
+    },
+    {
+        "name": "updateCustomer",
+        "description": "Update an existing customer's information in the database",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "customerName": {
+                    "type": "string",
+                    "description": "The name of the customer to update"
+                },
+                "contactInfo": {
+                    "type": "string",
+                    "description": "The updated contact information of the customer"
+                }
+            },
+            "required": [
+                "customerName",
+                "contactInfo"
+            ]
+        }
+    },
+    {
+        "name": "retrieveCustomer",
+        "description": "Retrieve details of a specific customer from the database",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "customerName": {
+                    "type": "string",
+                    "description": "The name of the customer to retrieve"
+                }
+            },
+            "required": [
+                "customerName"
+            ]
+        }
+    },
+    {
+        "name": "listCustomers",
+        "description": "List all customers in the database",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "limit": {
+                    "type": "integer",
+                    "description": "The maximum number of customers to retrieve"
+                }
+            },
+            "required": []
+        }
+    }
+]
